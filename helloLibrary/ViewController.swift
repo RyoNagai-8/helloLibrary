@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonAction(_ sender: Any) {
+        HUD.flash(.success, delay: 1.0)
+    }
+    
 }
 
